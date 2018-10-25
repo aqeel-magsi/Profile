@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Home page Aslam</title>
+        <link rel="stylesheet" type="text/css" href="Styles/Stylesheet.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="banner">             
+            </div>
+            
+            <nav id="navigation">
+                <ul id="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="repositories.html">Repositories</a></li>
+                    <li><a href="extra_curr.html">Extra-curricular</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div id="content_area">
+                <img src="Images/stress.png" class="imgLeft" />
+<h3> Dynamic earthquake rupture modeling </h3>
+<p>
+    We perform physics-based simulations of earthquake rupture propagation on geometrically complex strike-slip faults to 
+    examine the off-fault stress changes resulting from dynamic fault slip. We consider many different realizations of the 
+    fault profile and use the output of our dynamic rupture simulations to calculate the Coulomb failure function (CFF) for each realization. 
+    We analyze the effects of fault maturity as well as the self-affine character of the fault surface on the calculated stress field.
+    Details of the project are avaliable in pdfs present in my publication page.
+</p>
+
+<img src="Images/coupling.png" class="imgRight"/>
+<h3>Coupling temporal physics of earthquakes</h3>
+<p>
+    We couple the short-term (dynamic) phase and the long-term (quasi-static) phase
+of an earthquake to understand the physics of an earthquake cycle. For dynamic phase, we solve the 3D wave equation using finite differences and then use 
+the stresses and strain out of the dynamic phase to solve the quasi-static phase of an earthquake. 
+For solving the quasi-static phase, we consider finite element method to solve the momentum balance equation.
+The finite difference code solves the full wave equation in 3D including inertial term. 
+The time step size is chosen based on Courant–Friedrichs–Lewy (CFL) technique. 
+The finite element codes solve the momentum balance equation where the inertia term is damped to produce the quasi-static behavior. 
+The inertia term is damped using mass scaling technique. Both of these codes are present in the repositories link in my webpage. Details 
+of the project are avaliable in pdfs present in my publication page.
+</p>
+
+<img src="Images/ML.png" class="imgLeft" />
+<h3>Machine Learning </h3>
+<p>
+   We estimating the max. possible magnitude of an induced earthquake in 
+    Oklahoma using Machine learning approach. We do this by running multiple ruptures on a complex strike-slip fault with inherent fault roughness. The rupture nucleation is provided through the elevated
+    pore pressure. We use full length of the fault (400 parameter), stresses ( 3 parameters), Slip weakening law (3 parameters), RMS height of fault (1 parameter) with 4000 rupture simulations to train
+    our model for a regresssion problem that can predict earthquake magnitudes. To train a model, we use neural networks with three hidden layers and 10 units in each layer. This work is build upon a previous
+    study done by our group (Elizabeth Gilmour). Details of the project are avaliable in pdfs present in my publication page. The ML code is present in repositories link.
+</p>
+
+<img src="Images/waveform.png" class="imgRight"/>
+<h3>Full 3D waveform modeling</h3>
+<p>
+    We perform three-dimensional (3D) deterministic
+earthquake ground motion simulations for the northern Canterbury plains,
+Christchurch and the Banks Peninsula region of NewZealand, which explicitly incorporate the
+effects of the surface topography. The simulations are done using Hercules, an
+octree-based finite-element parallel software for solving 3D seismic wave
+propagation problems in heterogeneous media under kinematic faulting. We
+describe the efforts undertaken to couple Hercules with the South Island Velocity
+Model (SIVM), which included changes to the SIVM code in order to allow for single
+repetitive queries and thus achieve a seamless final-element meshing process
+within the end-to-end approach adopted in Hercules. Details 
+of the project are avaliable in pdfs present in my publication page.
+
+            </div>
+            
+            <div id="sidebar">
+                <h4><i>Useful links</i></h4>
+<img src="Images/eric_page.png" class="imgLeft" />
+<p>
+    <a href="http://www.ceri.memphis.edu/people/egdaub/index.html">Source Physics Group - CERI</a>
+</p> 
+
+<img src="Images/ceri.png" class="imgLeft" />
+<p>
+    <a href="http://www.ceri.memphis.edu">CERI - University of Memphis</a>
+</p> 
+<img src="Images/uofm.png" class="imgLeft" />
+<p>
+    <a href="https://www.memphis.edu/">University of Memphis</a>
+</p> 
+
+<h4><i>News</i></h4>
+<marquee direction="up" width="250" height="100">
+<p>
+   The link provides my interview on the graduation day from ICTP, Italy. 
+    <a href="https://www.ictp.it/about-ictp/media-centre/news/news-archive/2012/8/khurram-aslam.aspx"> Khurram interview by ICTP</a>
+</p> 
+<p>
+   The link provides Khurram Aslam's resume. 
+    <a href="./docs/Khurram_resume.pdf"> Resume</a>
+</p>
+
+<p> 
+    Link to my LinkdIn <a href="https://www.linkedin.com/in/khurram-shahzad-aslam-phd-19321020/"> Khurram LinkdIn</a>
+</p> 
+</marquee>
+                 
+            </div>
+            
+            <footer>
+                <p>The page was last updated on 8th Oct, 2018. Please refer to news for updates</p>
+            </footer>
+        </div>
+    </body>
+</html>
+
