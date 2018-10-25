@@ -21,7 +21,7 @@ body p
 
 #banner
 {
-    background-image: url(../images/banner.png);
+    background-image: url(../Images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     /*background-size: 65vw 12vh;*/
